@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5b99c9a2de.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="modal" name="showShopCart">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-header-close">
+              <span class="modal-header-close-btn">&times;</span>
+            </div>
+            <div class="modal-header-tittle">Your Bag</div>
+          </div>
+          <div class="modal-body">
+            <!-- Insert here my items list -->
+          </div>
+          <div class="cart__page-footer">
+            <div class="cart__page-footer-total cart__total"></div>
+            <div class="cart__page-footer-checkout">
+              <input
+                type="button"
+                class="cart__page-footer-checkout-btn btn__checkout"
+                value="CHECKOUT"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="home__page-background"
+        aria-label="Foto de freemockups.org: https://www.pexels.com/es-es/foto/colchon-blanco-y-negro-frente-a-la-montana-775219/"
+      >
+        <header class="home__page">
+          <nav class="home__page-nav">
+            <h4 class="home__page-nav-home btn__home">
+              <a href="./index.html">Home</a>
+            </h4>
+            <h4 class="home__page-nav-products btn__products">
+              <a href="./products.html">Products</a>
+            </h4>
+            <h4 class="home__page-nav-about btn__about">
+              <a href="./about.html">About</a>
+            </h4>
+          </nav>
+          <h1 class="home__page-logo btn__logo">comfy</h1>
+          <div class="home__page-cart btn__cart">
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            <span
+              id="num-total-sup"
+              class="home__page-cart-count cart__items hidden"
+            ></span>
+          </div>
+        </header>
+        <div class="home__page-baner">
+          <h1 class="home__page-baner-title">Rest, Relax, Unwind</h1>
+          <h3 class="home__page-baner-description">
+            Embrace you choices - we do
+          </h3>
+          <input
+            type="button"
+            class="home__page-baner-shownow btn__shownow"
+            value="SHOW NOW"
+          />
+        </div>
+      </div>
+
+      <div class="home__page-content">
+        <div class="home__page-content-about">
+          <h2 class="home__page-content-about-tittle">
+            <span class="home__page-content-about-tittle-slash">/</span>
+            Featured
+          </h2>
+        </div>
+        <main class="home__page-content-main"></main>
+        <input
+          type="button"
+          class="home__page-content-all-products btn__showall"
+          value="ALL PRODUCTS"
+        />
+      </div>
+    </div>
+    <script type="module" async src="./js/views/Home.js"></script>
+  </body>
+</html>

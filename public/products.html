@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5b99c9a2de.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Products</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="modal" name="showShopCart">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-header-close">
+              <span class="modal-header-close-btn">&times;</span>
+            </div>
+            <div class="modal-header-tittle">Your Bag</div>
+          </div>
+          <div class="modal-body"></div>
+          <div class="cart__page-footer">
+            <div class="cart__page-footer-total cart__total"></div>
+            <div class="cart__page-footer-checkout">
+              <input
+                type="button"
+                class="cart__page-footer-checkout-btn btn__checkout"
+                value="CHECKOUT"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="products__page">
+        <nav class="products__page-nav">
+          <h4 class="products__page-nav-home btn__home">
+            <a href="./index.html">Home</a>
+          </h4>
+          <h4 class="products__page-nav-products btn__products">
+            <a href="./products.html">Products</a>
+          </h4>
+          <h4 class="products__page-nav-about btn__about">
+            <a href="./about.html">About</a>
+          </h4>
+        </nav>
+        <h1 class="products__page-tittle btn__logo">comfy</h1>
+        <div class="products__page-cart btn__cart">
+          <span
+            id="num-total-sup"
+            class="products__page-cart-count cart__items hidden"
+          ></span>
+          <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        </div>
+      </header>
+      <div class="products__page-selected-place-banner">
+        <h3 class="products__page-selected-place-banner-tittle">
+          Home / Products
+        </h3>
+      </div>
+      <div class="products__page-content">
+        <aside class="products__page-content-nav">
+          <div class="products__page-content-nav-search">
+            <input type="text" placeholder="Search..." class="input__search" />
+          </div>
+          <menu class="products__page-content-nav-company">
+            <p class="products__page-content-nav-company-tittle">Company</p>
+            <p class="products__page-content-nav-company-menu btn__filter">
+              All
+            </p>
+            <p class="products__page-content-nav-company-menu btn__filter">
+              Ikea
+            </p>
+            <p class="products__page-content-nav-company-menu btn__filter">
+              Marcos
+            </p>
+            <p class="products__page-content-nav-company-menu btn__filter">
+              Caressa
+            </p>
+            <p class="products__page-content-nav-company-menu btn__filter">
+              Liddy
+            </p>
+
+            <div class="products__page-content-nav-price"></div>
+            <p class="products__page-content-nav-company-tittle">Price</p>
+            <input
+              class="products__page-content-nav-company-range-bar btn__price"
+              type="range"
+              id="price"
+              name="rangeInput"
+              min="0"
+              max="80"
+              value="80"
+              oninput="amount.value = this.value"
+            />
+            <span class="products__page-content-nav-company-range">
+              Value : $<output id="amount" name="amount" for="rangeInput"
+                >80</output
+              ></span
+            >
+          </menu>
+        </aside>
+        <main class="products__page-content-main"></main>
+      </div>
+    </div>
+    <script type="module" async src="./js/views/Products.js"></script>
+  </body>
+</html>

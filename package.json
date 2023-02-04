@@ -1,0 +1,23 @@
+{
+  "name": "task_2.8-rebuild",
+  "version": "1.0.0",
+  "description": "Online shop, saving items to your localstorage",
+  "main": "index.js",
+  "scripts": {
+    "type": "tsc --watch",
+    "sass": "sass --watch src/sass/styles.scss:public/css/styles.css "
+  },
+  "author": "Sergiy Solomka Tyutyunchenko",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3"
+  }
+}
