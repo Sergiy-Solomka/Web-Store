@@ -53,5 +53,5 @@ Use your Prefered Live Server software to visualize and edit TS files which will
 ## 4. Start Live Server to use App and navigate to folder.
 
 ```bash
-/public/
+http://YOUR_HOST:PORT/public/
 ```
